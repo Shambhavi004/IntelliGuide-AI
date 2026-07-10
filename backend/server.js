@@ -14,8 +14,7 @@ import placementRoutes from "./routes/placement.js";
 
 
 const app = express();
-const PORT = 8080;
-
+const PORT = process.env.PORT || 8080;
 app.use(express.json());
 app.use(cors());
 
@@ -102,7 +101,7 @@ app.post("/api/login", async (req, res) => {
 
     const token = jwt.sign(
       { userId: user._id },
-      "mysecretkey",
+      process.env.JWT_SECRET,
       { expiresIn: "1d" }
     );
 
