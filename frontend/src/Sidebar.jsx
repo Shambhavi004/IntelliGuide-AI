@@ -2,7 +2,7 @@ import "./Sidebar.css";
 import { useContext, useEffect } from "react";
 import { MyContext } from "./MyContext.jsx";
 import { v1 as uuidv1 } from "uuid";
-
+import logo from "./assets/logo.png";
 function Sidebar({ setActivePage }) {
 
     const {
@@ -148,10 +148,10 @@ function Sidebar({ setActivePage }) {
             >
 
                 <img
-                    src="src/assets/logo.png"
-                    alt="gpt logo"
+                    src={logo}
+                     alt="Logo"
                     className="logo"
-                />
+                    />
 
                 <span>
                     Start a New Chat
