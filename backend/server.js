@@ -26,7 +26,9 @@ app.use("/api", placementRoutes);
 app.use("/api", resumeRoutes);
 
 
-
+app.get("/", (req, res) => {
+  res.send("IntelliGuide AI Backend is running ");
+});
 
 app.listen(PORT, () => {
   console.log(`server running on ${PORT}`);
