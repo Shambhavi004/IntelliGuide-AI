@@ -22,7 +22,7 @@ const analyzeResume = async () => {
 
         setLoading(true);
 
-        const response = await fetch("http://localhost:8080/api/resume-review",{
+        const response = await fetch("https://intelliguide-ai.onrender.com/api/resume-review",{
             method: "POST",
             headers:{
                 Authorization: localStorage.getItem("token")

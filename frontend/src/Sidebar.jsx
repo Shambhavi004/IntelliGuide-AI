@@ -21,7 +21,7 @@ function Sidebar({ setActivePage }) {
         try {
 
             const response = await fetch(
-                "http://localhost:8080/api/thread",
+                "https://intelliguide-ai.onrender.com/api/thread",
                 {
                     headers: {
                         Authorization: localStorage.getItem("token")
@@ -74,7 +74,7 @@ function Sidebar({ setActivePage }) {
         try {
 
             const response = await fetch(
-                `http://localhost:8080/api/thread/${newThreadId}`,
+                `https://intelliguide-ai.onrender.com/api/thread/${newThreadId}`,
                 {
                     headers: {
                         Authorization: localStorage.getItem("token")
@@ -105,7 +105,7 @@ function Sidebar({ setActivePage }) {
         try {
 
             const response = await fetch(
-                `http://localhost:8080/api/thread/${threadId}`,
+                `https://intelliguide-ai.onrender.com/api/thread/${threadId}`,
                 {
                     method: "DELETE",
 

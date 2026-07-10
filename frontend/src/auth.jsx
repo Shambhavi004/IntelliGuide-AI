@@ -12,8 +12,8 @@ function Auth({ setIsLoggedIn }) {
 const handleAuth = async () => {
 
   const url = isSignup
-    ? "http://localhost:8080/api/signup"
-    : "http://localhost:8080/api/login";
+    ? "https://intelliguide-ai.onrender.com/api/signup"
+    : "https://intelliguide-ai.onrender.com/api/login";
 
   try {
 

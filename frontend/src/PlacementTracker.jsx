@@ -26,7 +26,7 @@ function PlacementTracker() {
     try {
       setLoading(true);
 
-      const response = await fetch("http://localhost:8080/api/placement", {
+      const response = await fetch("https://intelliguide-ai.onrender.com/api/placement", {
         method: "POST",
 
         headers: {
@@ -71,7 +71,7 @@ function PlacementTracker() {
   };
   const deletePlacement = async (id) => {
     try {
-      await fetch(`http://localhost:8080/api/placement/${id}`, {
+      await fetch(`https://intelliguide-ai.onrender.com/api/placement/${id}`, {
         method: "DELETE",
 
         headers: {
@@ -87,7 +87,7 @@ function PlacementTracker() {
   const savePlacement = async (id) => {
     try {
       await fetch(
-        `http://localhost:8080/api/placement/${id}`,
+        `https://intelliguide-ai.onrender.com/api/placement/${id}`,
 
         {
           method: "PUT",
@@ -117,7 +117,7 @@ function PlacementTracker() {
   };
   const getPlacements = async () => {
     try {
-      const response = await fetch("http://localhost:8080/api/placement", {
+      const response = await fetch("https://intelliguide-ai.onrender.com/api/placement", {
         headers: {
           Authorization: localStorage.getItem("token"),
         },
